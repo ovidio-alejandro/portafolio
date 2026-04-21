@@ -1,0 +1,23 @@
+.about {
+  padding: 100px 20px;
+  background: #0f0f0f;
+  color: white;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.about-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
