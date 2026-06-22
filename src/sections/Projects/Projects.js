@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section className="projects" id="projects">
 
-     { /*<h2 className="projects-title">Mis Proyectos</h2>
+      <h2 className="projects-title">Mis Proyectos</h2>
 
       <div className="projects-container">
 
@@ -41,7 +41,7 @@ function Projects() {
           </div>
         </div>
 
-      </div>*/}
+      </div>
 
     </section>
   );

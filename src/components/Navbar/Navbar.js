@@ -9,7 +9,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar">
+    <div>
+      <nav className="navbar">
 
       <div className="logo">MiPortafolio</div>
 
@@ -17,16 +18,18 @@ export default function Navbar() {
       <div className="menu-icon" onClick={() => setOpen(!open)}>
         ☰
       </div>
+      </nav>
+        <ul className={`nav-links ${open ? "active" : ""}`}>
 
-      <ul className={`nav-links ${open ? "active" : ""}`}>
+          <li><a href="#hero" onClick={handleClick}>Inicio</a></li>
+          <li><a href="#about" onClick={handleClick}>Sobre mí</a></li>
+          <li><a href="#projects" onClick={handleClick}>Proyectos</a></li>
+          <li><a href="#contact" onClick={handleClick}>Contacto</a></li>
 
-        <li><a href="#hero" onClick={handleClick}>Inicio</a></li>
-        <li><a href="#about" onClick={handleClick}>Sobre mí</a></li>
-        <li><a href="#projects" onClick={handleClick}>Proyectos</a></li>
-        <li><a href="#contact" onClick={handleClick}>Contacto</a></li>
-
-      </ul>
-
-    </nav>
+        </ul>
+    </div>
+      
+    
+    
   );
 }
